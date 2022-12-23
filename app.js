@@ -6,6 +6,18 @@ const H = document.querySelector('.Hi')
 const dot = document.querySelector('.dot')
 const emoji = document.querySelector('.emoji')
 const letter = document.querySelectorAll('.home span');
+const theme = document.querySelector('.theme')
+const circle = document.querySelector('.circle')
+const root = document.querySelector(':root');
+
+theme.addEventListener('click' , () => {
+    circle.classList.toggle('circle-act')
+    if (circle.classList.contains('circle-act')) { 
+        root.style.setProperty('--white' , '#1d1d1d' ) ; 
+        root.style.setProperty('--bg-color' , '#fff' ) ; 
+    }
+    else {  root.style.setProperty('--white' , '#fff' ); root.style.setProperty('--bg-color' , '#1d1d1d' )  }
+})
 
 document.addEventListener('mousemove' , e => {
     cursor.setAttribute('style' , 'top:' + (e.pageY - 10 )+ 'px; left:' + (e.pageX -10 )+ 'px')

@@ -22,6 +22,34 @@ body {
     color: var(--white);
 }
 
+.theme {
+    width: 3em;
+    height: 1.6em;
+    position: absolute;
+    right: 0;
+    background-color: #bebebe;
+    margin: 2em;
+    margin: 2em;
+    border-radius: 20px;
+}
+
+.circle {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: var(--fav);
+    border-radius: 50%;
+    top: 0.3px;
+    left: 0.3px;
+    z-index: 999;
+    transition: .5s;
+}
+
+.circle-act {
+    transition: .5s;
+    left: 23px;
+}
+
 .cursor {
     width: 20px;
     height: 20px;
@@ -360,8 +388,8 @@ p {
     margin: 4em auto;
 }
 
-input {
-    background: rgba(255, 255, 255, 0.15);
+.modal input {
+    background: rgb(126 110 110 / 15%);
     width: 100%;
     padding: 8px;
     margin: 15px 0;
@@ -372,11 +400,11 @@ input {
     font-size: 20px;
 }
 
-label {
+.modal label {
     color: var(--fav)
 }
 
-button {
+.modal button {
     background: var(--fav);
     padding: 10px 20px;
     border: none;
@@ -386,10 +414,6 @@ button {
     color: #fff;
     font-size: 18px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: gray;
 }
 
 .links {
@@ -417,6 +441,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     cursor: none;
+    width: 20%;
 }
 
 .link:hover i {
@@ -431,11 +456,21 @@ button:hover {
     z-index: -999;
 }
 
-@media only screen and (max-width :600px) {
+@media only screen and (max-width :400px) {
     .home {
         margin-left: 2em;
     }
     .home span {
         font-size: 3em;
     }   
+    .modal input {
+        width: 16em;
+    }
+    .links {
+        column-gap: 0;
+    }
+    .modal {
+        height: 360px;
+        width: 360px;
+    }
 }

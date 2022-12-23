@@ -5,7 +5,7 @@ const cursor = document.querySelector('.cursor')
 const H = document.querySelector('.Hi')
 const dot = document.querySelector('.dot')
 const emoji = document.querySelector('.emoji')
-const letter = document.querySelectorAll('span');
+const letter = document.querySelectorAll('.home span');
 
 document.addEventListener('mousemove' , e => {
     cursor.setAttribute('style' , 'top:' + (e.pageY - 10 )+ 'px; left:' + (e.pageX -10 )+ 'px')

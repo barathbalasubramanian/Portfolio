@@ -151,11 +151,13 @@ body {
 
 :is(.home) {
     min-height: 100vh;
+    min-width: 100vw;
     display: flex;  
     justify-content: start;
     align-items: center;
     padding-left: 12em;
     column-gap: 5em;
+    
 }
 
 
@@ -464,15 +466,17 @@ a{
     color: var(--fav);
 }
 
-@media only screen and (max-width :400px) {
+@media only screen and (max-width :600px) {
     .home {
         padding-left: 2em;
+        width: 25em;
         align-items: end;
         background-image: url('images/Profile.png') ;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
+        overflow-x:hidden ;
     }
     .home .img {
         display: none;

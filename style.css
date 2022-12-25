@@ -474,6 +474,9 @@ a{
         background-size: cover;
         background-attachment: fixed;
     }
+    .home .img {
+        display: none;
+    }
     .home span {
         font-size: 3em;
     }   

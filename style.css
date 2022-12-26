@@ -485,6 +485,9 @@ a{
     .home span {
         font-size: 3em;
     }   
+    .theme {
+        margin: 1em;
+    }
     .modal input {
         width: 16em;
     }

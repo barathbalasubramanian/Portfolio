@@ -469,7 +469,8 @@ a{
 @media only screen and (max-width :600px) {
     .home {
         padding-left: 2em;
-        width: 25em;
+        min-height: 100vh;
+        min-width: 100vw;
         align-items: end;
         background-image: url('images/Profile.png') ;
         background-repeat: no-repeat;

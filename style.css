@@ -486,7 +486,7 @@ a{
         font-size: 3em;
     }   
     .theme {
-        margin: 1em;
+        margin: 1em 0;
     }
     .modal input {
         width: 16em;

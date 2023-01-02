@@ -122,7 +122,6 @@ startcrud()
 startquiz()
 
 
-
 const observer = new IntersectionObserver((enteries) => {
     enteries.forEach((entry) => {
         if (entry.isIntersecting) {

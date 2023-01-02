@@ -151,7 +151,6 @@ body {
 
 :is(.home) {
     min-height: 100vh;
-    min-width: 100vw;
     display: flex;  
     justify-content: start;
     align-items: center;
@@ -464,6 +463,19 @@ p {
 a{
     text-decoration: none;
     color: var(--fav);
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(50%);
+    transition: all 1s;
+}
+
+.show {
+    filter: blur(0);
+    transform: translateY(0);
+    opacity: 1;
 }
 
 @media only screen and (max-width :600px) {

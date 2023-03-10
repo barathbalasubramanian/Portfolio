@@ -483,12 +483,12 @@ a{
         padding-left: 2em;
         min-height: 100vh;
         min-width: 100vw;
-        align-items: end;
+/*         align-items: end;
         background-image: url('images/Profile.png') ;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        background-attachment: fixed;
+        background-attachment: fixed; */
         overflow-x:hidden ;
     }
     .home .img {
